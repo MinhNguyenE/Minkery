@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minkery - Home</title>
+    <link href="style.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <script src="https://kit.fontawesome.com/d29972a0d8.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+
+        <div class="upper-header">
+            <div class="container">
+                <div class="row">
+                    <a href="index.html" class="col-md-10" id="logo">
+                        <div ><i class="fas fa-bread-slice"></i> MINKERY</div>
+                    </a>
+                    <div class="col-md-1" id="cart">
+                        <div id="cart">
+                            <a href="cart.html"><i class="fas fa-shopping-cart"></i><span>Cart</span></a>
+                        </div>
+                    </div>
+                    <div class="col-md-1" id="user">
+                        <div id="user">
+                            <a href="user.html"><i class="fas fa-user"></i><span>User</span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row" id="mbcart-user">
+                    <div>
+                        <a href="cart.html" id="mbcart"><i class="fas fa-shopping-cart"></i><span>Cart</span></a>
+                        <a href="user.html" id="mbuser"><i class="fas fa-user"></i><span>User</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-header">
+            <div class="container">
+                <div class="row" id="navbar">
+                    <a class="col-3" id="home" href="index.html">home</a>
+                    <a class="col-3" id="about" href="gioithieu.html">about</a>
+                    <a class="col-3" id="shop" href="sanpham.html">shop</a>
+                    <a class="col-3" id="contact" href="contact.html">contact</a>
+                </div>
+                
+                <a href="javascript:void(0);" class="menubtn" onclick="activeClass()" style="text-align: center;">
+                    <i class="fa fa-bars"> M E N U</i>
+                </a>
+                
+                <div id="mbmenu">
+                    <ul>
+                        <li><a class="col-sm-12" id="mbhome" href="index.html">home</a></li>
+                        <li><a class="col-sm-12" id="mbabout" href="gioithieu.html">about</a></li>
+                        <li><a class="col-sm-12" id="mbshop" href="sanpham.html">shop</a></li>
+                        <li><a class="col-sm-12" id="mbcontact" href="contact.html">contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+    </header>
+
+    <content>
+        <div class="container text-center">
+            <div id="hcwh-q">Chúng tôi có thể giúp bạn thế nào?</div>
+            <div class="row">
+                <div class="col-6" style="margin-top: 10px;" id="hcwh">
+                    
+                    <div class="card">
+                        <a href="sanpham.html">
+                            <img src="shopping-cart.png" class="card-img-top" alt="...">
+                        </a>
+                        <div class="card-body">
+                          <h5 class="card-title">Tôi muốn mua bánh?</h5>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-6" style="margin-top: 10px;" id="hcwh">
+                    <div class="card">
+                        <a href="index.html">
+                            <img src="portfolio.png" class="card-img-top" alt="...">
+                        </a>
+                        <div class="card-body">
+                          <h5 class="card-title">Tôi muốn xin việc?</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6" style="margin-top: 10px;" id="hcwh">
+                    <div class="card">
+                        <a href="index.html">
+                            <img src="interview.png" class="card-img-top" alt="...">
+                        </a>
+                        <div class="card-body">
+                          <h5 class="card-title">Tôi muốn phỏng vấn?</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6" style="margin-top: 10px;" id="hcwh">
+                    <div class="card">
+                        <a href="index.html">
+                            <img src="bullhorn.png" class="card-img-top" alt="...">
+                        </a>
+                        <div class="card-body">
+                          <h5 class="card-title">Tôi muốn quảng cáo?</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12" id="map">
+                    <img src="location.png" alt="">
+                    <div style="font-family: 'Signika Negative', sans-serif">Địa chỉ: 140 Lê Trọng Tấn, Tân Phú, TP.HCM</div>
+                </div>
+            </div>
+
+        </div>
+    </content>
+
+    <div style="height: 50px;"></div>
+    <footer>
+        <div class="footer-logo"><i class="fas fa-bread-slice"></i> MINKERY</div>
+        <div class="quote">MINKERY - Thiên đường bánh ngọt</div>
+        <div class="name">Họ và tên: Nguyễn Hữu Quang Minh</div>
+        <div class="mssv">MSSV: 2001215958</div>
+        <div class="cpr">Copyright © 2023 Minkery</div>
+        <div class="social">
+            <a href="https://facebook.com">
+                <i class="fa-brands fa-facebook"></i>
+            </a>
+            <a href="https://twitter.com">
+                <i class="fa-brands fa-twitter"></i>
+            </a>
+            <a href="https://instagram.com">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+        </div>
+</footer>
+
+
+    <script>
+        function activeClass() {
+          var x = document.getElementById("mbmenu");
+          if (x.style.display === "block") {
+            x.style.display = "none";
+          } else {
+            x.style.display = "block";
+          }
+        }
+        </script>
+    <script src="func.js"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+</body>
+</html>

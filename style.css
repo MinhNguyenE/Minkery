@@ -1,0 +1,967 @@
+body {box-sizing: border-box;}
+    /* Extra small devices (phones, 600px and down) */
+    @media only screen and (max-width: 599px) {
+        #wrapper {height: fit-content;}
+        #cart-box, #receipt {width: 100%; height: fit-content; margin-top: 10px;}
+        #cart-box [class*="col-"] {font-size: 13px;}
+        #cart-box img {width: 60px;}
+        #cart-box [class*="col-"] span {font-size: 13px;}
+        #cart-box [class*="col-"] #price, #cart-box [class*="col-"] #price1 {font-size: 13px;}
+        #cart-box [class*="col-"] .counter {font-size: 13px;}
+        .upper-header {
+            background-color: rgb(241, 241, 241);
+            padding: 20px;
+            align-items: center;
+        }
+        .upper-header.container .row {}
+        .footer-header {
+            background-color: rgb(0, 225, 184);
+        }
+        #logo {
+            text-align: center;
+            font-family: 'Cherry Bomb One', cursive;
+            text-align: center;
+            cursor: pointer;
+            text-decoration: none;
+            color: rgb(103, 68, 16);
+            font-size: 30px;
+            margin-left: 0%;
+        }
+        #mbcart-user {
+            text-align: center;
+            height: fit-content;
+            width: 100%;
+            margin-top: 20px;
+            font-size: 15px;
+            font-family: 'Righteous', cursive;
+            justify-items: space-between;
+            margin-left: 1%;
+        }
+        #mbcart, #mbuser {
+            border: 2px solid black;
+            border-radius: 15px;
+            padding-left: 15px;
+            padding-right: 15px;
+            text-decoration: none;
+            color: black;
+        }
+        #navbar {display: none;}
+        #home, #about, #shop, #contact {display: none;}
+        #mbmenu {
+            text-align: center;
+            text-transform: uppercase;
+            background-color: rgb(0, 225, 184);
+            height: 150px;
+            align-items: center;
+            font-size: 25px;
+            font-family: 'Righteous', cursive;
+            transition: width 2s, height 4s;
+        }
+        #mbmenu {
+            display: none;}
+        #mbhome, #mbabout, #mbshop, #mbcontact {width: 100%; display: none;}
+        li {list-style-type: none;}
+        li a {
+            text-decoration: none;
+            color: black;
+        }
+        .menubtn {
+            font-size: 25px;
+            padding: 5px;
+            text-align: center;
+            text-decoration: none; color: black;
+        }
+        .menubtn:hover + #mbmenu, #mbhome, #mbabout, #mbshop, #mbcontact {display: block; text-align: center; margin-right: 15px;}
+        #cart, #user {display: none;}
+        footer {
+            position: block;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: rgb(0, 225, 184);
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+        .footer-logo {
+            font-size: 30px;
+            font-family: 'Cherry Bomb One', cursive;
+        }
+        footer .social a {
+            text-decoration: none;
+            font-size: 30px;
+            color: white;
+            justify-content: space-between;
+        }
+        /*HOME*/
+        #quote-text {
+            font-size: smaller;
+        }
+        #cards {width: 100%;}
+        .card {
+            width: 100%;
+            text-align: center;
+            margin: 5px;
+        }
+        #quotebox {width: 100%; padding-bottom: 40px;}
+        #aboutmink {font-family: 'Anton', sans-serif; color: rgb(251, 177, 184); font-size: 20px; text-align: center;}
+        #slogan {font-size: 35px; font-family: 'Dancing Script', cursive; font-weight: bold; color: rgb(0, 0, 0); text-align: center;}
+        #quote {font-family: 'Signika Negative', sans-serif; font-size: 15px; color: grey; text-align: center;}
+        #card-col{width: 100%;}
+        /*HOME*/
+
+        /*SHOP*/
+        #cupcake-tab-pane #item-card-col, #cake-tab-pane #item-card-col {
+            width: 100%;
+        }
+        #myTabContent div div div .card {
+            width: 85%;
+            padding: 10px;
+            height: fit-content;
+            text-align: center;
+            align-items: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            border-radius: 10px;
+            margin: 10px auto 10px auto;
+        }
+        .shopbox .title {
+            margin-top: 20px;
+            font-size: 40px;
+            font-family: 'Righteous', cursive;
+            text-align: center;
+        }
+        
+        #sort-icon {text-align: right;}
+        /*SHOP*/
+            /*about*/
+            .slogan {
+            font-family: 'Dancing Script', cursive;
+            font-size: 25px;
+            text-align: center;
+            margin-top: 20px;
+            }
+            #reviewCard {
+            width: 100%;
+            height: fit-content;
+            padding: 10px;
+            margin: auto;
+        }
+        #reviewCard .card {margin: auto; height: fit-content; width: 80%; padding: 10px;}
+        #reviewCard .card img {width: 140px; 
+            height: fit-content; 
+            margin: auto; 
+            border: 3px solid rgb(0, 225, 184); 
+            border-radius: 100px;
+        }
+        #reviewCard .card .rate {color: rgb(255, 179, 0);}
+        /*about*/
+        
+    #hcwh {
+        text-align: center;
+        width: 100%;
+    }
+    #hcwh .card img {
+        width: 100px;
+        border: 3px solid black;
+        border-radius: 30px;
+        padding: 10px;
+    }
+
+    #map {text-align: center;}
+    #map img {
+        margin-top: 50px;
+        width: 90%;
+        border-radius: 5px;
+        border: 3px solid lightgrey
+    }
+    .form-dk {
+        text-align: center; 
+        border: 1px solid black; 
+        width: 300px; 
+        font-weight: bold; 
+        height: fit-content; 
+        margin: auto; 
+        padding: 20px; 
+        font-family: 'Play', sans-serif; 
+        font-size: 18px; 
+        border-radius: 10px; 
+        background-color: rgb(0, 225, 184);
+    }
+    /*CHITIETSP*/
+    #items-wrapper .row {width: 100%;}
+    #items-wrapper [calss*="col-"] {height: 800px; align-items: center;}
+    #items-wrapper {
+        height: 800px;
+        background-color: rgb(235, 255, 248); 
+        padding-top: 30px; 
+        margin-top: 10px; 
+        padding-bottom: 30px; 
+        margin-bottom: 30px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #item-info {
+        margin-left: 10px;
+        width: 100%;
+        text-align: center;
+        color: rgb(93, 40, 0);
+    }
+    #item-info .name {font-family: 'Pacifico', cursive; font-size: 40px; text-indent: 20px;}
+    #item-info .price {font-size: 25px; font-family: 'Major Mono Display', monospace; font-weight: bold; text-indent: 20px;}
+    #item-info .counter {
+        font-size: 20px; 
+        border: 1px solid rgb(93, 40, 0);
+        width: fit-content;
+        padding: 2px 5px 5px 5px;
+        margin-top: 80px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #item-info .order {
+        width: 100%;
+        background-color: rgb(235, 255, 248);
+        margin-top: 20px;
+        padding: 15px 0px 0px 0px;
+        text-align: center;
+        font-weight: bolder;
+        font-size: 15px;
+        border: 1px solid rgb(93, 40, 0);
+        font-family: 'Bungee Hairline', cursive;;
+        margin-left: auto;
+    }
+    #item-info .descrip {
+        margin-top: 20px;
+        text-align: center;
+        font-size: 15px;
+        padding: 5px;
+        margin-left: 0px;
+    }
+    #item-pic img {width: 50%; border-radius: 20px; border: 5px solid rgba(0, 0, 0, 0.4);}
+    #item-pic {text-align: center;; width: 100%; text-indent: 20px;}
+    /*CHITIETSP*/
+    }
+
+    /* Small devices (portrait tablets and large phones, 600px and up) */
+    @media only screen and (min-width: 600px) and (max-width: 1077px) {
+        #wrapper {height: fit-content;}
+        #cart-box, #receipt {width: 100%; height: fit-content;}
+        #receipt {margin-top: 10px;}
+        .upper-header {
+            background-color: rgb(241, 241, 241);
+            padding: 20px;
+            align-items: center;
+        }
+        .upper-header .container .row {
+            margin: auto;
+        }
+        .footer-header {
+            background-color: rgb(0, 225, 184);
+        }
+        #logo {
+            width: 100%;
+            text-align: center;
+            font-family: 'Cherry Bomb One', cursive;
+            text-align: center;
+            cursor: pointer;
+            text-decoration: none;
+            color: rgb(103, 68, 16);
+            font-size: 30px;
+        }
+        #mbcart-user {
+            text-align: center;
+            height: fit-content;
+            width: 100%;
+            margin-top: 20px;
+            font-size: 15px;
+            font-family: 'Righteous', cursive;
+            justify-items: space-between;
+        }
+        #mbcart, #mbuser {
+            border: 2px solid black;
+            border-radius: 15px;
+            padding-left: 15px;
+            padding-right: 15px;
+            text-decoration: none;
+            color: black;
+        }
+        #navbar {display: none;}
+        #home, #about, #shop, #contact {display: none;}
+        #mbmenu {
+            text-align: center;
+            text-transform: uppercase;
+            background-color: rgb(0, 225, 184);
+            height: 150px;
+            align-items: center;
+            font-size: 25px;
+            font-family: 'Righteous', cursive;
+            transition: width 2s, height 4s;
+        }
+        #mbmenu {
+            display: none;}
+        #mbhome, #mbabout, #mbshop, #mbcontact {width: 100%; display: none;}
+        li {list-style-type: none;}
+        li a {
+            text-decoration: none;
+            color: black;
+        }
+        .menubtn {
+            font-size: 25px;
+            padding: 5px;
+            text-align: center;
+            text-decoration: none; color: black;
+        }
+        .menubtn:hover + #mbmenu, #mbhome, #mbabout, #mbshop, #mbcontact {display: block; text-align: center; margin-right: 15px;}
+        #cart, #user {display: none;}
+        footer {
+            position: block;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: rgb(0, 225, 184);
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+        .footer-logo {
+            font-size: 30px;
+            font-family: 'Cherry Bomb One', cursive;
+        }
+        footer .social a {
+            text-decoration: none;
+            font-size: 30px;
+            color: white;
+            justify-content: space-between;
+        }
+        /*HOME*/
+        #quote-text {
+            font-size: smaller;
+        }
+        #cards {width: 100%;}
+        .card {
+            width: 100%;
+            text-align: center;
+            margin: 5px;
+        }
+        #quotebox {width: 100%; padding-bottom: 40px;}
+        #aboutmink {font-family: 'Anton', sans-serif; color: rgb(251, 177, 184); font-size: 20px; text-align: center;}
+        #slogan {font-size: 35px; font-family: 'Dancing Script', cursive; font-weight: bold; color: rgb(0, 0, 0); text-align: center;}
+        #quote {font-family: 'Signika Negative', sans-serif; font-size: 15px; color: grey; text-align: center;}
+        #card-col{width: 100%;}
+        /*HOME*/
+
+        /*SHOP*/
+        #cupcake-tab-pane #item-card-col, #cake-tab-pane #item-card-col {
+            width: 100%;
+        }
+        #myTabContent div div div .card {
+            width: 85%;
+            padding: 10px;
+            height: fit-content;
+            text-align: center;
+            align-items: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            border-radius: 10px;
+            margin: 10px auto 10px auto;
+        }
+        
+        #sort-icon {text-align: right;}
+        .shopbox .title {
+            margin-top: 20px;
+            font-size: 40px;
+            font-family: 'Righteous', cursive;
+            text-align: center;
+        }
+        /*SHOP*/
+
+        /*about*/
+        
+        .slogan {
+            font-family: 'Dancing Script', cursive;
+            font-size: 30px;
+            text-align: center;
+            margin-top: 20px;
+            }
+        #reviewCard {
+            width: 100%;
+            height: fit-content;
+            padding: 10px;
+            margin: auto;
+        }
+        #reviewCard .card {margin: auto; height: fit-content; width: 17rem; padding: 10px;}
+        #reviewCard .card img {width: 140px; 
+            height: fit-content; 
+            margin: auto; 
+            border: 3px solid rgb(0, 225, 184); 
+            border-radius: 100px;
+        }
+        #reviewCard .card .rate {color: rgb(255, 179, 0);}
+        /*about*/
+
+        #hcwh .card {
+            border: 0px;
+        }
+        #hcwh {
+            text-align: center;
+            padding-left: 0%;
+        }
+        #hcwh .card img {
+            width: 100px;
+            border: 3px solid black;
+            border-radius: 30px;
+            padding: 10px;
+        }
+
+        #map {text-align: center;}
+        #map img {
+            margin-top: 50px;
+            width: 90%;
+            border-radius: 5px;
+            border: 3px solid lightgrey
+        }
+        .form-dk {text-align: center; border: 1px solid black; width: 500px; font-weight: bold; height: fit-content; margin: auto; padding: 20px; font-family: 'Play', sans-serif; font-size: 25px; border-radius: 10px; background-color: rgb(0, 225, 184);}
+    
+        /*CHITIETSP*/
+        #items-wrapper .row {width: 100%;}
+        #items-wrapper [calss*="col-"] {height: 800px; align-items: center;}
+        #items-wrapper {
+            height: 900px;
+            background-color: rgb(235, 255, 248); 
+            padding-top: 30px; 
+            margin-top: 10px; 
+            padding-bottom: 30px; 
+            margin-bottom: 30px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        #item-info {
+            width: 100%;
+            text-align: center;
+            color: rgb(93, 40, 0);
+        }
+        #item-info .name {font-family: 'Pacifico', cursive; font-size: 40px;}
+        #item-info .price {font-size: 25px; font-family: 'Major Mono Display', monospace; font-weight: bold;}
+        #item-info .counter {
+            font-size: 20px; 
+            border: 1px solid rgb(93, 40, 0);
+            width: fit-content;
+            padding: 2px 5px 5px 5px;
+            margin-top: 80px;
+            margin-left: 43%;
+        }
+        #item-info .order {
+            width: 100%;
+            background-color: rgb(235, 255, 248);
+            margin-top: 20px;
+            padding: 15px 0px 0px 0px;
+            text-align: center;
+            font-weight: bolder;
+            font-size: 15px;
+            border: 1px solid rgb(93, 40, 0);
+            font-family: 'Bungee Hairline', cursive;;
+        }
+        #item-info .descrip {
+            margin-top: 20px;
+            text-align: center;
+            font-size: 15px;
+            padding: 5px;
+        }
+        #item-pic img {width: 50%; border-radius: 20px; border: 5px solid rgba(0, 0, 0, 0.4);}
+        #item-pic {text-align: center;; width: 100%;}
+        /*CHITIETSP*/
+    }
+
+    /* Medium devices (landscape tablets, 768px and up) */
+    @media only screen and (min-width: 1078px) and (max-width: 1200px) {
+        .upper-header {
+            background-color: rgb(241, 241, 241);
+            padding: 10px;
+            align-items: center;
+        }
+        .footer-header {
+            background-color: rgb(0, 225, 184);
+        }
+        #cart.col-md-1, #user.col-md-1 {border: 0px;}
+        #logo {
+            height: 70px;
+            background-color: rgb(241, 241, 241);
+            color: rgb(103, 68, 16);
+            font-size: 50px;
+            font-family: 'Cherry Bomb One', cursive;
+            text-align: center;
+            cursor: pointer;
+            text-decoration: none;
+            text-indent: 80px;
+        }
+        #navbar {
+            text-align: center;
+            text-transform: uppercase;
+            background-color: rgb(0, 225, 184);
+            height: 50px;
+            align-items: center;
+            font-size: 25px;
+            font-family: 'Righteous', cursive;
+        }
+        #navbar a {text-decoration: none; color: black;}
+        #home:hover, #about:hover, #shop:hover, #contact:hover {
+            background-color: black;
+            color: white;
+            cursor: pointer;
+        }
+        
+        #mbmenu, .menubtn {display: none;}
+        #cart, #user {
+            text-align: center;
+            height: fit-content;
+            width: 65px;
+            margin-top: 20px;
+            font-size: 15px;
+            font-family: 'Righteous', cursive;
+            border: 2px solid black;
+            border-radius: 15px;
+            margin-right: 5px;
+        }
+        #cart a, #user a {text-decoration: none; color: black;}
+        #mbcart-user {display: none}
+        footer {
+            position: relative;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: rgb(0, 225, 184);
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+        .footer-logo {
+            font-size: 30px;
+            font-family: 'Cherry Bomb One', cursive;
+        }
+        footer .social a {
+            text-decoration: none;
+            font-size: 30px;
+            color: white;
+            justify-content: space-between;
+        }
+
+        content {align-items: center; text-align: center; margin-top: 15px; margin-bottom: 20px;}
+        /*HOME*/
+        #banner {
+            margin: auto;
+            width: 80%;
+            height: 80%;
+        }
+        #aboutmink {font-family: 'Anton', sans-serif; color: rgb(251, 177, 184); font-size: 40px;}
+        #slogan {font-size: 70px; font-family: 'Dancing Script', cursive; font-weight: bold; color: rgb(0, 0, 0);}
+        #quote {font-family: 'Signika Negative', sans-serif; font-size: 30px; color: grey}
+        #cupcake-icon {
+            font-size: 30px;
+        }
+        .card {
+            padding-top: 10px;
+            height: 330px;
+            width: 14rem;
+            margin: 5px;
+        }
+        .card-body a {font-family: 'Cherry Bomb One', cursive;}
+        /*HOME*/
+
+        /*SHOP*/
+        .shopbox {
+            background-color: white;
+            height: fit-content;
+            width: 80%;
+            margin: auto;
+        }
+        .shopbox .title {
+            margin-top: 20px;
+            font-size: 40px;
+            font-family: 'Righteous', cursive;
+            text-align: center;
+        }
+        #searhbar .input-group {width: 70%;}
+        #sort-icon {text-align: right;}
+        #myTabContent div div div .card img {width: 210px; border-radius: 10px;}
+        #myTabContent div div div .card img:hover {width: 220px;}
+        #myTabContent div div div .card #price {font-family: 'Righteous', cursive; font-size: 25px;}
+        #myTabContent div div div .card {
+            width: 15rem;
+            padding: 10px;
+            height: 420px;
+            text-align: center;
+            align-items: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            border-radius: 10px;
+            margin: 10px;
+        }
+        .shopbox div {}
+        /*SHOP*/
+        /*about*/
+        #reviewCard {
+            width: 40%;
+            height: fit-content;
+            padding: 10px;
+            margin: auto;
+            width: 90%;
+        }
+        #reviewCard .card {margin: auto; height: fit-content; width: 18rem; padding: 10px;}
+        #reviewCard .card img {width: 140px; 
+            height: fit-content; 
+            margin: auto; 
+            border: 3px solid rgb(0, 225, 184); 
+            border-radius: 100px;
+        }
+        #reviewCard .card .rate {color: rgb(255, 179, 0);}
+        /*about*/
+        /*contact*/
+        #hcwh .card {
+            border: 0px;
+        }
+        #hcwh {
+            text-align: center;
+            padding-left: 13%;
+        }
+        #hcwh .card img {
+            width: 100px;
+            border: 3px solid black;
+            border-radius: 30px;
+            padding: 10px;
+        }
+
+        #map {text-align: center;}
+        #map img {
+            margin-top: 50px;
+            width: 70%;
+            border-radius: 5px;
+            border: 3px solid lightgrey
+        }
+        /*contact*/
+        .form-dk {text-align: center; border: 1px solid black; width: 500px; font-weight: bold; height: fit-content; margin: auto; padding: 20px; font-family: 'Play', sans-serif; font-size: 25px; border-radius: 10px; background-color: rgb(0, 225, 184);}
+    
+        /*CHITIETSP*/
+        #items-wrapper .row {width: 100%;}
+        #items-wrapper [calss*="col-"] {height: 800px; align-items: center;}
+        #items-wrapper {
+            height: 800px;
+            background-color: rgb(235, 255, 248); 
+            padding-top: 30px; 
+            margin-top: 10px; 
+            padding-bottom: 30px; 
+            margin-bottom: 30px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        #item-info {
+            text-align: left;
+            color: rgb(93, 40, 0);
+        }
+        #item-info .name {font-family: 'Pacifico', cursive; font-size: 40px;}
+        #item-info .price {font-size: 25px; font-family: 'Major Mono Display', monospace; font-weight: bold;}
+        #item-info .counter {
+            font-size: 20px; 
+            border: 1px solid rgb(93, 40, 0);
+            width: fit-content;
+            padding: 2px 5px 5px 5px;
+            margin-top: 80px;
+        }
+        #item-info .order {
+            width: 100%;
+            background-color: rgb(235, 255, 248);
+            margin-top: 20px;
+            padding: 15px 0px 0px 0px;
+            text-align: center;
+            font-weight: bolder;
+            font-size: 15px;
+            border: 1px solid rgb(93, 40, 0);
+            font-family: 'Bungee Hairline', cursive;;
+        }
+        #item-info .descrip {
+            margin-top: 20px;
+            text-align: justify;
+            font-size: 15px;
+            padding: 5px;
+        }
+        #item-pic img {width: 500px; border-radius: 20px; border: 5px solid rgba(0, 0, 0, 0.4);}
+        #item-pic {text-align: left; text-indent: 50px;}
+        /*CHITIETSP*/
+    }
+
+    /*Large screen*/
+    @media only screen and (min-width: 1202px) {
+        .upper-header {
+            background-color: rgb(241, 241, 241);
+            padding: 10px;
+            align-items: center;
+        }
+        .footer-header {
+            background-color: rgb(0, 225, 184);
+        }
+        #cart.col-md-1, #user.col-md-1 {border: 0px;}
+        #logo {
+            height: 70px;
+            background-color: rgb(241, 241, 241);
+            color: rgb(103, 68, 16);
+            font-size: 50px;
+            font-family: 'Cherry Bomb One', cursive;
+            text-align: center;
+            cursor: pointer;
+            text-decoration: none;
+            text-indent: 80px;
+        }
+        #navbar {
+            text-align: center;
+            text-transform: uppercase;
+            background-color: rgb(0, 225, 184);
+            height: 50px;
+            align-items: center;
+            font-size: 25px;
+            font-family: 'Righteous', cursive;
+        }
+        #navbar a {text-decoration: none; color: black;}
+        #home:hover, #about:hover, #shop:hover, #contact:hover {
+            background-color: black;
+            color: white;
+            cursor: pointer;
+        }
+        
+        #mbmenu, .menubtn {display: none;}
+        #cart, #user {
+            text-align: center;
+            height: fit-content;
+            width: 65px;
+            margin-top: 20px;
+            font-size: 15px;
+            font-family: 'Righteous', cursive;
+            border: 2px solid black;
+            border-radius: 15px;
+            margin-right: 5px;
+        }
+        #cart a, #user a {text-decoration: none; color: black;}
+        #mbcart-user {display: none}
+        footer {
+            position: relative;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: rgb(0, 225, 184);
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+        .footer-logo {
+            font-size: 30px;
+            font-family: 'Cherry Bomb One', cursive;
+        }
+        footer .social a {
+            text-decoration: none;
+            font-size: 30px;
+            color: white;
+            justify-content: space-between;
+        }
+
+        content {align-items: center; text-align: center; margin-top: 15px; margin-bottom: 20px;}
+        /*HOME*/
+        #banner {
+            margin: auto;
+            width: 80%;
+            height: 80%;
+        }
+        #banner div {
+            border-radius: 20px;}
+        #aboutmink {font-family: 'Anton', sans-serif; color: rgb(251, 177, 184); font-size: 40px;}
+        #slogan {font-size: 70px; font-family: 'Dancing Script', cursive; font-weight: bold; color: rgb(0, 0, 0);}
+        #quote {font-family: 'Signika Negative', sans-serif; font-size: 30px; color: grey}
+        #cupcake-icon {
+            font-size: 30px;
+        }
+        .card {
+            padding-top: 10px;
+            height: 330px;
+            width: 15rem;
+            margin: 5px;
+        }
+        .card-body a {font-family: 'Cherry Bomb One', cursive;}
+        /*HOME*/
+
+        /*SHOP*/
+        .shopbox {
+            background-color: white;
+            height: fit-content;
+            width: 80%;
+            margin: auto;
+        }
+        .shopbox .title {
+            margin-top: 20px;
+            font-size: 40px;
+            font-family: 'Righteous', cursive;
+            text-align: center;
+        }
+        #searhbar .input-group {width: 70%;}
+        #sort-icon {text-align: right;}
+        #myTabContent div div div .card img {width: 250px; border-radius: 10px;}
+        #myTabContent div div div .card img:hover {width: 260px;}
+        #myTabContent div div div .card #price {font-family: 'Righteous', cursive; font-size: 25px;}
+        #myTabContent div div div .card {
+            width: 18rem;
+            padding: 10px;
+            height: 420px;
+            text-align: center;
+            align-items: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            border-radius: 10px;
+            margin: 10px;
+        }
+        /*SHOP*/
+        /*about*/
+        .slogan {
+            font-family: 'Dancing Script', cursive;
+            font-size: 50px;
+            margin-top: 20px;
+        }
+        .text {
+            font-family: 'Signika Negative', sans-serif;
+            color: darkgray;
+        }
+        .review {
+            font-family: 'Righteous', cursive;
+            font-size: 25px;
+        }
+        #reviewCard {
+            width: 40%;
+            height: fit-content;
+            padding: 10px;
+            margin: auto;
+        }
+        #reviewCard .card {margin: auto; height: fit-content; width: 18rem; padding: 10px;}
+        #reviewCard .card img {width: 140px; 
+            height: fit-content; 
+            margin: auto; 
+            border: 3px solid rgb(0, 225, 184); 
+            border-radius: 100px;
+        }
+        #reviewCard .card .rate {color: rgb(255, 179, 0);}
+        /*about*/
+
+        /*contact*/
+        #hcwh .card {
+            border: 0px;
+        }
+        #hcwh {
+            text-align: center;
+            padding-left: 13%;
+        }
+        #hcwh .card img {
+            width: 100px;
+            border: 3px solid black;
+            border-radius: 30px;
+            padding: 10px;
+        }
+
+        #map {text-align: center;}
+        #map img {
+            margin-top: 50px;
+            width: 80%;
+            border-radius: 5px;
+            border: 3px solid lightgrey
+        }
+        /*contact*/
+
+        .form-dk {text-align: center; border: 1px solid black; width: 500px; font-weight: bold; height: fit-content; margin: auto; padding: 20px; font-family: 'Play', sans-serif; font-size: 25px; border-radius: 10px; background-color: rgb(0, 225, 184);}
+        
+        /*CHITIETSP*/
+        #items-wrapper .row {width: 100%;}
+        #items-wrapper [calss*="col-"] {height: 800px; align-items: center;}
+        #items-wrapper {
+            height: 800px;
+            background-color: rgb(235, 255, 248); 
+            padding-top: 30px; 
+            margin-top: 10px; 
+            padding-bottom: 30px; 
+            margin-bottom: 30px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        #item-info {
+            text-align: left;
+            color: rgb(93, 40, 0);
+        }
+        #item-info .name {font-family: 'Pacifico', cursive; font-size: 40px;}
+        #item-info .price {font-size: 25px; font-family: 'Major Mono Display', monospace; font-weight: bold;}
+        #item-info .counter {
+            font-size: 20px; 
+            border: 1px solid rgb(93, 40, 0);
+            width: fit-content;
+            padding: 2px 5px 5px 5px;
+            margin-top: 80px;
+        }
+        #item-info .order {
+            width: 100%;
+            background-color: rgb(235, 255, 248);
+            margin-top: 20px;
+            padding: 15px 0px 0px 0px;
+            text-align: center;
+            font-weight: bolder;
+            font-size: 20px;
+            border: 1px solid rgb(93, 40, 0);
+            font-family: 'Bungee Hairline', cursive;;
+        }
+        #item-info .descrip {
+            margin-top: 20px;
+            text-align: justify;
+            font-size: 20px;
+            padding: 5px;
+        }
+        #item-pic img {width: 600px; border-radius: 20px; border: 5px solid rgba(0, 0, 0, 0.4);}
+        #item-pic {text-align: left; text-indent: 100px;}
+        /*CHITIETSP*/
+    
+    }
+
+    .text {
+        font-family: 'Signika Negative', sans-serif;
+        color: darkgray;
+        text-align: justify;
+    }
+    .review {
+        text-align: center ;
+        font-family: 'Righteous', cursive;
+        font-size: 25px;
+    }
+    
+    #hcwh-q {
+        font-size: 40px;
+        margin-top: 30px; 
+        font-family: 'Pacifico', cursive;
+    }
+
+    .legend {margin-top: 20px; font-family: 'Play', sans-serif; font-size: 30px; margin-bottom: 20px; font-weight: bolder; background-color: rgb(149, 255, 218); border-radius: 20px;}
+    .form-dk div {text-align: left;}
+    .form-dk input {width: 100%; margin-top: 5px; margin-bottom: 5px; font-family: 'Play', sans-serif; font-weight: bold;}
+    .form-dk button {width: 150px; font-weight: bold; font-size: 20px; margin-top: 20px}
+    .nav-item button {font-size: 20px;}
+    #signTab {
+        width: 100%;
+    }
+
+    #cart-item [class*="col-"] {padding: 10px; border: 1px solid black;}
+    #cart-item [class*="btn "] {width: 25px; text-align: center; height: 25px; padding: 0px;}
+    #cart-item .col-5 {text-align: left;}
+    #item-name {width: 50px; font-size: 22px;}
+    #cart-box img {border-radius: 10px;}
+    #cart-box {margin: auto; border: 2px solid lightpink; height: 600px; border-radius: 10px;}
+    #receipt {border: 2px solid lightpink; height: fit-content; border-radius: 10px; margin-left: 2px;}
+    #cart-box #titles {padding: 10px; margin-top: 10px; font-family: 'Signika Negative', sans-serif; font-size: 25px;}
+    .counter {padding-top: 25px;}
+    #price, #price1 {font-size: 20px; padding-top: 20px;}
+    #receipt #detail {
+        margin-top: 20px;
+        font-family: 'Signika Negative', sans-serif;
+        font-size: 25px;
+        border-bottom: 1px solid grey;
+    }
+    td {border: 1px solid black; width: 100%;}
+    td .sp {text-align: left;}
+    #receipt [id*="sp"] {text-align: left; text-indent: 5px;}
+    #receipt .row {border-bottom: 1px solid grey; padding: 5px 0px 5px 0px;}
+    #wrapper {background-color: rgb(255, 255, 255, 0.8); padding: 30px; border-radius: 20px;}
+
+    
